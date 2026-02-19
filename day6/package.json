@@ -1,5 +1,5 @@
 {
-  "name": "day5",
+  "name": "day6",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -9,9 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^5.2.1",
-    "fs": "^0.0.1-security"
-  }
+  "description": ""
 }

@@ -8,10 +8,14 @@ export const readJsonFile = async (path) => {
     }
 }
 export const writeJsonFile = async(path, data)=>{
+    let status = 0;
+    let message = "";
     try {
         await fs.writeFile(path,JSON.stringify(data,2,null));
-        console.log("Data has been written successfully");       
+        status = 200;
+        message = "Data has been written successfully.";    
     } catch (error) {
         console.log("unable to write");     
     }
+    return {status,message};
 }
